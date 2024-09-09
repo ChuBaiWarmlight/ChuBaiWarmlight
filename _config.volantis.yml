@@ -1,3 +1,14 @@
+### 文章目录部件
+toc:
+  class: toc
+  display: [desktop, mobile] # [desktop, mobile]
+  header:
+    icon: fas fa-list
+    title: 本文目录
+  list_number: false
+  min_depth: 2
+  max_depth: 5
+
 ############################### Cover ############################### > start
 cover:
   height_scheme: full # full, half
