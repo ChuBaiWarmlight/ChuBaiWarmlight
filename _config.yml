@@ -105,3 +105,6 @@ deploy:
 
 # 图标
 favicon: https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
+
+css:
+  - /css/index.css

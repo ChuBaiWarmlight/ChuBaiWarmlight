@@ -55,19 +55,20 @@ plugins:
   aplayer:
     enable: true
     # Required
-    server: netease   # netease, tencent, kugou, xiami, baidu
+    server: netease   # 指定音乐来源服务器，选项包括：netease, tencent, kugou, xiami, baidu。这里选择了网易云音乐（netease）。
     type: playlist    # song, playlist, album, search, artist
     id: 523845661    # song id / playlist id / album id / search keyword
     # Optional
     fixed: false      # enable fixed mode
     theme: '#008c8c'  # main color
-    autoplay: false   # audio autoplay
-    order: list       # player play order, values: 'list', 'random'
-    loop: all         # player loop play, values: 'all', 'one', 'none'
-    volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
-    list_max_height: 200px # list max height
-    list_folded: true
-    autoHide: true    # hide automaticaly
+    autoplay: true   # 自动播放
+    mini: true
+    order: random       # 播放值: 'list', 'random'
+    loop: all         # 播放循环选项，all 表示循环播放整个列表。其他选项可能包括：one（单曲循环）和 none（无循环）。
+    volume: 0.7       # 默认音量，取值范围为 0 到 1（百分比）。注意，用户调整音量后，播放器会记住用户的设置，默认值将不再有效。
+    list_max_height: 200px # 播放列表的最大高度限制，超出时将自动显示滚动条。
+    list_folded: true # 列表折叠选项，设置为 true 表示默认折叠播放列表。
+    autoHide: true    #自动隐藏功能，true 表示播放器在不活动时会自动隐藏。
   # 代码高亮
   code_highlight: highlightjs # highlightjs or prismjs
   # highlight.js
@@ -107,3 +108,34 @@ comments:
       light: github-light
       dark: github-dark
     label: ✨💬✨
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title:
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+    - name: 背景音乐
+      icon: fa-solid fa-compact-disc
+  search: 请输入   # Search bar placeholder
+############################### Navigation Bar ############################### > end
