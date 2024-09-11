@@ -132,7 +132,7 @@ navbar:
       url: about/
     - name: 背景音乐
       icon: fa-solid fa-compact-disc
-    - name: 暗黑模式 # 可自定义
+    - name: 暗黑/明亮 # 可自定义
       icon: fas fa-moon # 可自定义
       toggle: darkmode
   search: 请输入   # Search bar placeholder
@@ -389,11 +389,11 @@ color_scheme:
     # 按钮色
     button: '#44D7B6'
     # 鼠标放到交互元素上时的色
-    hover: '#ff5722'
+    hover: '#0098CC'
     # 主题色块内部的文字颜色
     inner: '#fff'
     # 选中区域文字的背景颜色
-    selection: 'alpha(#2196f3, 0.2)'
+    selection: 'alpha(#2196f3, 0.3)'
   # ------------
   # 亮色主题（默认）
   light:
@@ -407,7 +407,7 @@ color_scheme:
     # 卡片背景色
     card: '#fff'
     # 卡片上的普通文字
-    text: '#444'
+    text: '#666'
 
     # 区块和代码块背景色
     block: '#f6f6f6'
@@ -498,7 +498,7 @@ sidebar:
       shape: circle # circle, rectangle
       url: /about/
       title: 初白的个人博客
-      subtitle: 于暴雨中行走，伞是倒划天空的船
+      subtitle: 在暴雨中行走，伞是倒划天空的船
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-envelope
