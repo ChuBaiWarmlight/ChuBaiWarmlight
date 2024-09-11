@@ -12,14 +12,14 @@ toc:
 ############################### Cover ############################### > start
 cover:
   height_scheme: full # full, half
-  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout_scheme: featured # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
   background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
-  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  logo: /images/article-avatar.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: '欢迎来到初白的个人博客'
   subtitle: '迷茫的人欢迎您！'
   search: A Wonderful Theme for Hexo # search bar placeholder
@@ -85,6 +85,7 @@ plugins:
     css:
       - https://unpkg.com/prismjs/themes/prism-dark.css
       - https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css
+      - /css/header.css
   darkmode:
     enable: true
 comments:
@@ -107,9 +108,9 @@ comments:
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: /images/article-avatar.jpg # navbar的头像
     icon:
-    title:
+    title: 初白的博客
   menu:
     - name: 博客
       icon: fa-solid fa-rss
@@ -306,8 +307,8 @@ custom_css:
     zoom-out: volantis-static/media/cursor/zoom-out.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
     zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
     grab: volantis-static/media/cursor/openhand.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
-  font_smoothing: true # font-smoothing for webkit
-  max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
+  font_smoothing: true # webkit的字体平滑
+  max_width: 1080px
   scrollbar:
     size: 4px
     border: 2px
@@ -315,7 +316,7 @@ custom_css:
     hover_background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
   navbar:
     height: 64px
-    width: auto # auto, max
+    width: max # auto, max
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   sidebar:
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
@@ -483,7 +484,7 @@ color_scheme:
 sidebar:
   position: right # left right
   # 主页、分类、归档等独立页面
-  for_page: [blogger, category, tagcloud, donate,webinfo]
+  for_page: [blogger, category, tagcloud, donate,webinfo,music,qrcode,lastupdate]
   # layout: docs/post 这类文章页面
   for_post: [toc]
   # 侧边栏组件库
@@ -494,18 +495,16 @@ sidebar:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
       avatar: /images/article-avatar.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
-      shape: rectangle # circle, rectangle
+      shape: circle # circle, rectangle
       url: /about/
-      title:
-      subtitle:
+      title: 初白的个人博客
+      subtitle: 于暴雨中行走，伞是倒划天空的船
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon: fa-solid fa-rss
-          url: /atom.xml
         - icon: fa-solid fa-envelope
           url: mailto:1840683922@qq.com
         - icon: fab fa-github
-          url: https://github.com/volantis-x/
+          url: https://github.com/ChuBaiWarmlight
         - icon: fa-solid fa-headphones-alt
           url: /
     # ---------------------------------------
@@ -554,10 +553,10 @@ sidebar:
     qrcode:
       class: qrcode
       display: [desktop, mobile] # [desktop, mobile]
-      height: 64px  # Automatic height if not set
+      height: 80px  # Automatic height if not set
       images:
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - /images/qrcode/QQ.jpg
+        - /images/qrcode/weixin.jpg
     # ---------------------------------------
     # webinfo widget
     webinfo:
@@ -572,21 +571,21 @@ sidebar:
           text: '文章数目：'
           unit: '篇'
         runtime:
-          enable: false
-          data: '2020/01/01'    # 填写建站日期
+          enable: true
+          data: '2024/09/11'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         wordcount:
-          enable: false
+          enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
           siteuv:
-            enable: false
+            enable: true
             text: '本站访客数：'
             unit: '人'
           sitepv:
-            enable: false
+            enable: true
             text: '本站总访问量：'
             unit: '次'
         lastupd:
