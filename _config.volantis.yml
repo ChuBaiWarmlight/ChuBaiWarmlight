@@ -17,7 +17,7 @@ cover:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
-  background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
+  background: /images/background.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: /images/article-avatar.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: '欢迎来到初白的个人博客'
@@ -405,7 +405,7 @@ color_scheme:
     site_footer: '#666'
 
     # 卡片背景色
-    card: '#fff'
+    card: 'rgba(255,255,255,0.75)'
     # 卡片上的普通文字
     text: '#666'
 
@@ -443,7 +443,7 @@ color_scheme:
     # 网站背景色              # Dark Grey 2
     site_bg: '#1f1f1f'
     # 卡片背景色              # Dark Grey 3
-    card: '#262626'
+    card: 'rgba(38,38,38,0.75)'
     # 网站背景上的文字
     site_inner: '#eeeeeede'
     # 网站页脚文字
