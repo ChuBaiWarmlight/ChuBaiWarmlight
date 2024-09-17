@@ -1,0 +1,15 @@
+- group: 我的生活 # 分组标题
+  description: 我的朋友  # 分组描述
+  items:
+    - title: 初白 # 名称
+      avatar: /images/article-avatar.jpg # 头像
+      url: 127.0.0.1 # 链接
+      screenshot: /images/photo/chubai.png # 截图
+      keywords: 自由，分享，创造，生活 # 关键词
+      description: 这是我的个人博客 # 描述
+    - title: 初白 # 名称
+      avatar: /images/article-avatar.jpg # 头像
+      url: 127.0.0.1 # 链接
+      screenshot: /images/photo/chubai.png # 截图
+      keywords: 自由，分享，创造，生活 # 关键词
+      description: 这是我的个人博客 # 描述

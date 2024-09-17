@@ -7,6 +7,8 @@ categories:
 - ['前端','CSS']
 tags:
   - ['CSS']
+groups: 
+  - ['mylist']
 ---
 
 - 介绍下 *BFC* 及其应用

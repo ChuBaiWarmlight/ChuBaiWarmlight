@@ -17,12 +17,12 @@ cover:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
-  background: /images/background.jpg
+  background: /images/background.png
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: /images/article-avatar.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: '欢迎来到初白的个人博客'
-  subtitle: '迷茫的人欢迎您！'
-  search: A Wonderful Theme for Hexo # search bar placeholder
+  subtitle: '在暴雨中行走，伞是倒划天空的船！'
+  search: 搜索你想要的内容吧 # search bar placeholder
   features:
     - name: 主页
       icon: #
@@ -124,9 +124,9 @@ navbar:
     - name: 归档
       icon: fa-solid fa-archive
       url: archives/
-    - name: 友链
-      icon: fa-solid fa-link
-      url: friends/
+    - name: 照片墙
+      icon: fa-sharp-duotone fa-solid fa-image
+      url: photo/
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
@@ -383,7 +383,7 @@ color_scheme:
   # 通用颜色
   common:
     # 主题色
-    theme: '#3dd9b6'
+    theme: '#0B87B7'
     # 链接色
     link: '#2092ec'
     # 按钮色
