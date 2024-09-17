@@ -8,7 +8,7 @@ subtitle: '在暴雨中行走，伞是倒划天空的船'
 description: '技术、生活、分享的个人博客，记录生活'
 keywords: 生活,技术,自由,工作
 author: 初白
-language:  zh-CN en zh-TW
+language:  zh-CN
 timezone: ''
 
 # URL
@@ -101,7 +101,9 @@ theme: volantis
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repository: 'https://github.com/ChuBaiWarmlight/ChuBaiWarmlight.git'
+  branch: blog
 
 # 图标
 favicon: https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
