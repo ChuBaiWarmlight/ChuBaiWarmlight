@@ -4,6 +4,5 @@ db.json
 *.log
 node_modules/
 !node_modules/hexo-theme-volantis/
-public/
 .deploy*/
 _multiconfig.yml
