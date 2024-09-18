@@ -6,3 +6,4 @@ node_modules/
 !node_modules/hexo-theme-volantis/
 .deploy*/
 _multiconfig.yml
+public/
