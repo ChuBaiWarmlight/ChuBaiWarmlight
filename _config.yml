@@ -110,3 +110,11 @@ favicon: https://gcore.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
 
 css:
   - /css/index.css
+
+# 优化系统 初次加载时间不变 其他速度变快
+service_worker:
+  maximumFileSizeToCacheInBytes: 5242880
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+  stripPrefix: public
+  verbose: true
