@@ -130,4 +130,5 @@ live2d:
   tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
   debug: false # 调试, 是否在控制台输出日志
   model:
-    use: https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json # npm-module package name
+#    use: https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json # npm-module package name
+     use: https://cdn.jsdelivr.net/gh/guansss/pixi-live2d-display/test/assets/shizuku/shizuku.model.json
